@@ -24,7 +24,7 @@ void loop(){
   digitalWrite(greenLED, HIGH);
   buttonstatus=digitalRead(button);
   if (buttonstatus == HIGH){          // if button pushed then
-    digitalWrite(relayPin,HIGH);      // relayPIN (light on)
+    digitalWrite(relayPin, INPUT);      // relayPIN (light on)
     delay(5000);                      // wait for a second
     digitalWrite(relayPin,LOW);       // relayPIN (light off)
  }
